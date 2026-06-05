@@ -225,4 +225,25 @@ header {
   padding: 10px 24px;
   font-size: 1rem;
 }
-@media (max-width: 768px);
+@media (max-width: 768px) {
+  /* 1. Stack layout columns */
+  .main-grid {
+      grid-template-columns: 1fr;
+  }
+
+  /* 2. Change header content from row to column layout */
+  header {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  /* 3. Reduce your name heading size on mobile */
+  .sidebar h1 {
+      font-size: 1.6rem;
+  }
+
+  /* 4. Upgrade touch interaction size for mobile fingers */
+  .theme-btn, #next-btn {
+      min-height: 44px;
+  }
+}
